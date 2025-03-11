@@ -71,7 +71,6 @@ export function Refund() {
         <Input
           required
           legend="Valor"
-          type="month"
           value={amount}
           onChange={(e) => setAmount(e.target.value)}
           disabled={!!params.id}
