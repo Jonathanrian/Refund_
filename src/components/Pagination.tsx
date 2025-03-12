@@ -21,7 +21,7 @@ export function Pagination({ current, total, onNext, onPrevious }: Props) {
         {current} / {total}
       </span>
 
-      <Button variant="iconSmall" onClick={onNext} disabled={current === 10}>
+      <Button variant="iconSmall" onClick={onNext} disabled={current === total}>
         <img src={rightSvg} alt="icone de avançar" />
       </Button>
     </div>
